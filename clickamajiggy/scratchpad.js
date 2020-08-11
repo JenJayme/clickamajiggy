@@ -9,3 +9,21 @@
                 Score: 0 | Top Score: 0
             </div>
         </nav> */
+
+
+        for (var i = 0; i < Paintings.length; i++) {
+            console.log("artUrl")
+            return (
+                <div className="artBlock">
+                    <h5>Art Block</h5>
+                <img src="./public/art/flaming-june-ru.jpg" alt="name"></img>
+                </div>
+            )
+        })
+    
+
+
+        <div>
+        <h4>Art Block</h4>
+    <img src={Paintings.artUrl} />
+    </div>
