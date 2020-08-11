@@ -1,10 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HelloNavbar from './components/Navbar';
+
 
 function App() {
+  console.log('Engaging app.js...');
   return (
+
     <div className="App">
+    <HelloNavbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,6 +26,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;

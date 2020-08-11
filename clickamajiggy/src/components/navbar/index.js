@@ -1,23 +1,28 @@
+//NAVBAR INDEX.JS
 import React from "react";
-import { Link } from "react-router-dom";
-import "./style.css";
-import Button from 'react-bootstrap/Button';
+import Navbar from 'react-bootstrap/Navbar'
+import { Jumbotron } from "react-bootstrap";
 
-
-function Navbar() {
+function HelloNavbar() {
+    console.log("Engaging navbar index.js...");
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <Link className="navbar-brand" to="/">
-                Clickamajiggy
-            </Link>
-            <div className="center">
-                <h1>Click an image to begin!</h1>
-            </div>
-            <div className="right">
-                Score: 0 | Top Score: 0
-            </div>
-        </nav>
+        <div>
+            <Navbar className="navbar" bg="dark" expand="lg">
+                <div className="col">
+                    <h1 className="brand">Clickamajiggy</h1>
+                </div>
+                <div className="col">
+                    <h4 className="center">Click an image to begin</h4>
+                </div>
+                <div className="col">
+                    <h3 className="right">Score: 0 | Top Score: 0</h3>
+                </div>
+            </Navbar>
+
+            <Jumbotron>
+            </Jumbotron>
+        </div>
     )
 }
 
-export default Navbar;
+export default HelloNavbar;
