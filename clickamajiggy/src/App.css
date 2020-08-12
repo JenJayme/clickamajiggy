@@ -51,3 +51,10 @@
 .brand {
   font-size: 2em;
 }
+
+footer {
+  background-color: purple;
+  height: 3em;
+  bottom: 0;
+  position: fixed;
+}
