@@ -27,3 +27,17 @@
         <h4>Art Block</h4>
     <img src={Paintings.artUrl} />
     </div>
+
+
+render() {
+    const numbers = ['one', 'two', 'three'];
+    const items = [];
+    for (let i = 0; i < numbers.length; i++) {
+      items.push(<li key={index}>{value}</li>);
+    }
+    return (
+      <div>
+        {items}
+      </div>
+    );
+  }

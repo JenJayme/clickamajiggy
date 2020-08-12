@@ -50,17 +50,23 @@ let Paintings = [
     }
 ]
 
-function ArtBlock() {
-    console.log("Engaging card index.js...");
+class ArtBlock extends React.Component{
 
+        render () {
+            console.log("Engaging ArtBlock component in card index.js...");
+            const ArtBlocks = [];
             for (var i = 0; i < Paintings.length; i++) {
-                return (
-                    <div className="artBlock">
-                        <h5>Art Block</h5>
-                    <img src={Paintings[i].artURL} alt={Paintings[i].name}></img>
-                    </div>
+                ArtBlocks.push(
+                    <img className="artBlock" src={Paintings[i].artURL} alt={Paintings[i].name}></img>
                 )
             }
+                return (
+                    <div>
+                        {ArtBlocks}
+                    </div>
+                )
+        }
 }
 
 export default ArtBlock;
+
