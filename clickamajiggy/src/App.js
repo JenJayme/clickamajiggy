@@ -6,7 +6,6 @@ import ArtBlock from './components/gallery';
 import { Container } from 'react-bootstrap';
 import ArtContext from "./utils/ArtContext";
 
-
 function App() {
   console.log('Engaging app.js...');
   const [ArtState, setArtState] = useState({
@@ -18,9 +17,6 @@ function App() {
     <div className="App">
     <HelloNavbar />
       <header className="App-header">
-        <h1>Clickamajiggy</h1>
-        <img src="../public/art/flaming-june-ru.jpg" />
-        <img src={logo} className="App-logo" alt="logo" />
         <p>Click on an image to earn points, but don't click on any more than once!</p>
       </header>
       <Container>
@@ -29,7 +25,10 @@ function App() {
           <ArtBlock />
         </div>
         </ArtContext.Provider>
+        <p></p>
       </Container>
+      <div className="footer">
+      </div>
     </div>
   );
 };

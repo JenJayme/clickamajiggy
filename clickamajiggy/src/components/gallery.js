@@ -59,7 +59,7 @@ class ArtBlock extends React.Component {
         super(props);
         this.state = {
             paintings: Paintings,
-            selection: null
+            selection: null,
         }
         //makes constructor aware of these custom methods
         this.randomizePaintings = this.randomizePaintings.bind(this)
@@ -70,6 +70,7 @@ class ArtBlock extends React.Component {
         let paintingName = event.target.dataset.painting;
         if (this.paintingName === this.state.selection) {
             //double-check all references to make sure this alert works
+            console.log("double click alert");
             alert("Wrong!");
         } else {
             this.setState({ selection: paintingName });
@@ -97,11 +98,8 @@ class ArtBlock extends React.Component {
                     onClick={this.handleClick}></img>
             )
         }
-        console.log(ArtBlocks);
         return (
-            <div>
-                <h1>Art Here</h1>
-                <img src="./public/art/flaming-june-ru.jpg"></img>
+            <div className="background">
                 {ArtBlocks}
             </div>
         )
