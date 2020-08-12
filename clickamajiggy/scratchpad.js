@@ -41,3 +41,35 @@ render() {
       </div>
     );
   }
+
+
+  class ArtBlock extends Component {
+    randomizePaintings() {
+       return Paintings.sort((a,b) => 0.5 - Math.random());
+    }
+    render() {
+       let randomPaintings = randomizePaintings();
+       for (let i = 0; i < randomPaintings.length; i++) {
+       ....
+       ....
+    }
+ }
+ //===================================
+
+ class ArtBlock extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          paintings: Paintings
+        }
+   }
+   randomizePaintings() {
+      this.setState({ paintings : Paintings.sort((a,b) => 0.5 - Math.random() });
+   }
+   render() {
+      let paintings = this.state.paintings;
+      for (let i = 0; i < paintings.length; i++) {
+      ....
+      ....
+   }
+}

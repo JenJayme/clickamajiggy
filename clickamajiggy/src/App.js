@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HelloNavbar from './components/Navbar';
-import ArtBlock from './components/Card'
+import ArtBlock from './components/Card';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 function App() {
@@ -16,11 +17,11 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Click on an image to earn points, but don't click on any more than once!</p>
       </header>
-      <div>
+      <Container>
         <div>
           <ArtBlock />
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
