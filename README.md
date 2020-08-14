@@ -23,7 +23,8 @@ Clickamajiggy is an interactive memory game featuring some of the world's most r
 
 ## [Visuals](#visuals)
 
-![Example Gif](public/assets/images/example.gif)
+
+![Example Gif](clickamajiggy/public/art/example.gif)
 
 <hr>
 
