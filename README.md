@@ -1,4 +1,5 @@
-# Clickamajiggy
+![Clickamajiggy]("clickamajiggy/public/art/logo.png")
+
 ![Travis Status](https://img.shields.io/travis/:jenjayme/:clickamajiggy)
 ![License](https://img.shields.io/github/license/jenjayme/clickamajiggy)
 <hr>
@@ -17,6 +18,9 @@ Clickamajiggy is an interactive memory game featuring some of the world's most r
 ### Download the app from Git Hub here:
 * [Repo URL](https://github.com/jenjayme/clickamajiggy)
 
+In the project directory, run:
+### `npm start`
+
 ### <a id="demo">View a demo:</a> 
 * [Deployed on GitHub Page](https://jenjayme.github.io/clickamajiggy/#demo)
 <hr>
@@ -32,6 +36,7 @@ Clickamajiggy is an interactive memory game featuring some of the world's most r
 * HTML5 & CSS
 * [Javascript](https://www.javascript.com/)
 * [React.js](https://reactjs.org/)
+* [Create React App](https://github.com/facebook/create-react-app)
 * [React Bootstrap](https://react-bootstrap.github.io/)
 * [VS Code](https://code.visualstudio.com/)
 * [Node.js](https://nodejs.org/)
