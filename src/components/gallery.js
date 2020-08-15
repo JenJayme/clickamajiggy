@@ -68,10 +68,12 @@ class ArtBlock extends React.Component {
 
     handleClick(event) {
         let paintingName = event.target.dataset.painting;
-        if (this.paintingName === this.state.selection) {
+        console.log("Painting Name", paintingName)
+        console.log("This.State.Selection", this.state.selection);
+        if (paintingName === this.state.selection) {
             //double-check all references to make sure this alert works
             console.log("double click alert");
-            alert("Wrong!");
+            alert("Oops! You clicked that one twice. You lost this time. Try again.");
         } else {
             this.setState({ selection: paintingName });
         }
