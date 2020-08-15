@@ -4,7 +4,7 @@ import './App.css';
 import HelloNavbar from './components/Navbar';
 import ArtBlock from './components/gallery';
 import { Container } from 'react-bootstrap';
-import ArtContext from "./utils/ArtContext";
+// import ArtContext from "./utils/ArtContext";
 
 function App() {
   console.log('Engaging app.js...');
@@ -20,11 +20,9 @@ function App() {
         <p>Click on an image to earn points, but don't click on any more than once!</p>
       </header>
       <Container>
-      <ArtContext.Provider>
         <div>
           <ArtBlock />
         </div>
-        </ArtContext.Provider>
         <p></p>
       </Container>
       <div className="footer">

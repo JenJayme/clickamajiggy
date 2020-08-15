@@ -1,6 +1,8 @@
 //CARD INDEX.JS
 import React, { useContext } from "react";
-import ArtContext from "../utils/ArtContext";
+
+let currentScore = 0;
+let highScore = 0;
 
 let Paintings = [
     {
@@ -60,6 +62,8 @@ class ArtBlock extends React.Component {
         this.state = {
             paintings: Paintings,
             selection: null,
+            currentScore: currentScore,
+            highScore: highScore
         }
         //makes constructor aware of these custom methods
         this.randomizePaintings = this.randomizePaintings.bind(this)
@@ -72,9 +76,9 @@ class ArtBlock extends React.Component {
         console.log("This.State.Selection", this.state.selection);
         if (paintingName === this.state.selection) {
             //double-check all references to make sure this alert works
-            console.log("double click alert");
             alert("Oops! You clicked that one twice. You lost this time. Try again.");
         } else {
+            handleCorrectGuess();
             this.setState({ selection: paintingName });
         }
         this.randomizePaintings();
@@ -89,7 +93,6 @@ class ArtBlock extends React.Component {
         console.log("Engaging ArtBlock component in card index.js...");
         let paintings = this.state.paintings;
         const ArtBlocks = [];
-
         for (var i = 0; i < paintings.length; i++) {
             ArtBlocks.push(
                 <img key={paintings[i].name}
@@ -108,4 +111,16 @@ class ArtBlock extends React.Component {
     }
 }
 
+function handleCorrectGuess() {
+    currentScore += 1
+    if (currentScore > highScore) {
+        highScore += 1
+    }
+    console.log("Current Score", currentScore);
+    console.log("High Score", highScore)
+}
+
 export default ArtBlock;
+// exports.currentScore = currentScore;
+// exports.highScore = highScore;
+// exports.ArtBlock = ArtBlock;
