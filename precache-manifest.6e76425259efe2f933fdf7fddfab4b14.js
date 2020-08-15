@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99932da1e292f526affe8e1326b09c78",
+    "revision": "4da7871d296fcfd2c341c3c4c2986632",
     "url": "/clickamajiggy/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/clickamajiggy/static/css/2.f3cffc9e.chunk.css"
   },
   {
-    "revision": "b35c4f9f2ab0ec078f1e",
+    "revision": "6f9c9f16c9de90445621",
     "url": "/clickamajiggy/static/css/main.e3364965.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/clickamajiggy/static/js/2.819704a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b35c4f9f2ab0ec078f1e",
-    "url": "/clickamajiggy/static/js/main.8fce9c47.chunk.js"
+    "revision": "6f9c9f16c9de90445621",
+    "url": "/clickamajiggy/static/js/main.f169ddca.chunk.js"
   },
   {
     "revision": "5fad29c878f2f8bbbcba",
