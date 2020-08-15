@@ -1,6 +1,7 @@
 //NAVBAR INDEX.JS
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar'
+// import { currentScore, highScore } from './components/gallery';
 
 function HelloNavbar() {
     console.log("Engaging navbar index.js...");
@@ -14,7 +15,7 @@ function HelloNavbar() {
                     <h4 className="center">Click an image to begin</h4>
                 </div>
                 <div className="col">
-                    <h3 className="right">Score: 0 | Top Score: 0</h3>
+                    <h3 className="right">Score: <currentScore /> | Top Score: <highScore /></h3>
                 </div>
             </Navbar>
         </div>
