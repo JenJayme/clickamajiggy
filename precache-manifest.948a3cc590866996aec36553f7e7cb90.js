@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "20c9e218d28e15e84a621a88906c771b",
+    "revision": "99932da1e292f526affe8e1326b09c78",
     "url": "/clickamajiggy/index.html"
   },
   {
-    "revision": "9aa4cf581e6aad07b488",
+    "revision": "cbf0d603763f75f35a2f",
     "url": "/clickamajiggy/static/css/2.f3cffc9e.chunk.css"
   },
   {
-    "revision": "924fcc79626ee157fb49",
-    "url": "/clickamajiggy/static/css/main.41b76e75.chunk.css"
+    "revision": "b35c4f9f2ab0ec078f1e",
+    "url": "/clickamajiggy/static/css/main.e3364965.chunk.css"
   },
   {
-    "revision": "9aa4cf581e6aad07b488",
-    "url": "/clickamajiggy/static/js/2.274bc985.chunk.js"
+    "revision": "cbf0d603763f75f35a2f",
+    "url": "/clickamajiggy/static/js/2.819704a1.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/clickamajiggy/static/js/2.274bc985.chunk.js.LICENSE.txt"
+    "url": "/clickamajiggy/static/js/2.819704a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "924fcc79626ee157fb49",
-    "url": "/clickamajiggy/static/js/main.1d5c036e.chunk.js"
+    "revision": "b35c4f9f2ab0ec078f1e",
+    "url": "/clickamajiggy/static/js/main.8fce9c47.chunk.js"
   },
   {
     "revision": "5fad29c878f2f8bbbcba",
