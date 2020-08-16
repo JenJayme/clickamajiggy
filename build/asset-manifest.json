@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/clickamajiggy/static/css/main.e3364965.chunk.css",
+    "main.js": "/clickamajiggy/static/js/main.f169ddca.chunk.js",
+    "main.js.map": "/clickamajiggy/static/js/main.f169ddca.chunk.js.map",
+    "runtime-main.js": "/clickamajiggy/static/js/runtime-main.1af2ca98.js",
+    "runtime-main.js.map": "/clickamajiggy/static/js/runtime-main.1af2ca98.js.map",
+    "static/css/2.f3cffc9e.chunk.css": "/clickamajiggy/static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.819704a1.chunk.js": "/clickamajiggy/static/js/2.819704a1.chunk.js",
+    "static/js/2.819704a1.chunk.js.map": "/clickamajiggy/static/js/2.819704a1.chunk.js.map",
+    "index.html": "/clickamajiggy/index.html",
+    "precache-manifest.6e76425259efe2f933fdf7fddfab4b14.js": "/clickamajiggy/precache-manifest.6e76425259efe2f933fdf7fddfab4b14.js",
+    "service-worker.js": "/clickamajiggy/service-worker.js",
+    "static/css/2.f3cffc9e.chunk.css.map": "/clickamajiggy/static/css/2.f3cffc9e.chunk.css.map",
+    "static/css/main.e3364965.chunk.css.map": "/clickamajiggy/static/css/main.e3364965.chunk.css.map",
+    "static/js/2.819704a1.chunk.js.LICENSE.txt": "/clickamajiggy/static/js/2.819704a1.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/clickamajiggy/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1af2ca98.js",
+    "static/css/2.f3cffc9e.chunk.css",
+    "static/js/2.819704a1.chunk.js",
+    "static/css/main.e3364965.chunk.css",
+    "static/js/main.f169ddca.chunk.js"
+  ]
+}

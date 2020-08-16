@@ -1,5 +1,17 @@
+Accordion.Toggle {
+  background-color: saddlebrown;
+}
+
 .background {
   background-color: saddlebrown;
+}
+
+.button {
+  
+}
+
+.card {
+    background-color: saddlebrown;
 }
 
 .container {
@@ -42,15 +54,17 @@ h1 {
   margin: 1em;
 }
 
-.navbar {
-  width: 100%;
-  height: 10em;
-  color: white;
-  background-color: purple;
-}
-
 .brand {
   font-size: 2em;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.directionsCard {
+  color: black;
+  font-size: .85em;
 }
 
 footer {
@@ -58,4 +72,30 @@ footer {
   height: 1em;
   bottom: 0;
   position: fixed;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 10em;
+  color: white;
+  background-color: purple;
+}
+
+.score {
+  color: rgb(241, 206, 116);
+  font-size: 32px;
+}
+
+.surpriseDiv {
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.surpriseImg {
+  height: 100px;
+  width: auto;
 }
