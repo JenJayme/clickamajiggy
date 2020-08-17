@@ -1,37 +1,9 @@
-Accordion.Toggle {
-  background-color: saddlebrown;
-}
-
-.background {
-  background-color: saddlebrown;
-}
-
-.button {
-  
-}
-
-.card {
-    background-color: saddlebrown;
-}
-
-.container {
-  background-color: saddlebrown;
-  height: 100%;
-}
-
-h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 70px !important;
-}
+/* Class names listed in alphabetical order */
 
 .App {
   text-align: center;
   background-color: rgb(88, 45, 14);
-}
-
-.App-logo {
-  height: 25vmin;
-  pointer-events: none;
+  height: fit-content;
 }
 
 .App-header {
@@ -46,12 +18,25 @@ h1 {
   padding: 15px;
 }
 
+.App-logo {
+  height: 25vmin;
+  pointer-events: none;
+}
+
 .App-link {
   color: #61dafb;
 }
 
 .artBlock {
   margin: 1em;
+}
+
+.background {
+  background-color: saddlebrown;
+}
+
+body {
+  background-color: rgb(88, 45, 14) !important;
 }
 
 .brand {
@@ -62,9 +47,29 @@ h1 {
   background-color: rgba(255, 255, 255, .3);
 }
 
+#clickMe {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {transform: rotate(20deg)}
+  to {transform: rotate(120deg)}
+}
+
+#closeDivBtn {
+  margin: 10px;
+}
+
+.container {
+  background-color: saddlebrown;
+  height: 100%;
+  margin-top: 30px;
+}
+
 .directionsCard {
-  color: black;
-  font-size: .85em;
+  color: white;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, .2)!important;
 }
 
 footer {
@@ -74,6 +79,11 @@ footer {
   position: fixed;
 }
 
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 30px !important;
+}
+
 .hidden {
   display: none;
   visibility: hidden;
@@ -81,7 +91,7 @@ footer {
 
 .navbar {
   width: 100%;
-  height: 10em;
+  height: 13em;
   color: white;
   background-color: purple;
 }
@@ -91,11 +101,17 @@ footer {
   font-size: 32px;
 }
 
+#scoreboard {
+  display: block;
+  float: none;
+}
+
 .surpriseDiv {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgb(81, 81, 218) !important;
+  color: white;
 }
 
 .surpriseImg {
-  height: 100px;
+  height: 300px !important;
   width: auto;
 }

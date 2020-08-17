@@ -5,19 +5,25 @@ import { Accordion, Card, Button } from 'react-bootstrap';
 function SurpriseDiv() {
     console.log("Running SurpriseDiv function...");
 
+    function hideDiv () {
+        var surpriseDiv = document.getElementById("surpriseDiv");
+        surpriseDiv.classList.add("hidden");    
+    }
+
     return (
-        <div id="surprise" className="hidden">
+        <div id="surpriseDiv" className="hidden">
             <Accordion>
                 <Card className="surpriseDiv">
                     <Card.Header>
-                        <h1>Surprise!</h1>
-                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                            Click me!
+                        <h1>Well, Aren't You Fabulous?</h1>
+                        <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
+                            <span id="clickMe">Click me!</span>
                         </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
-                        <Card.Body><h3>You're Fabulous!</h3> <br></br>
-                    <img id="surpriseImg" src="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif"></img>
+                        <Card.Body><img id="surpriseImg" src="https://media.giphy.com/media/s2qXK8wAvkHTO/giphy.gif"></img>
+                        <div>
+            <Button id="closeDivBtn" onClick={hideDiv}>Oh Behave!</Button></div>
                         </Card.Body>
                     </Accordion.Collapse>
                 </Card>

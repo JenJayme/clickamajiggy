@@ -3,7 +3,7 @@ import React from "react";
 import Modal from './modal'
 
 let currentScore = 0;
-let highScore = 0;
+let highScore = 16;
 
 let Paintings = [
     {
@@ -114,6 +114,7 @@ class ArtBlock extends React.Component {
         }
         return (
             <div>
+                <div id="scoreboard" className="score">Score: {this.state.currentScore} | High Score: {this.state.highScore}</div>
                 <div id="modal" className="surpriseDiv">
                     {Modal}
                 </div>
@@ -132,16 +133,15 @@ export function handleCorrectGuess() {
     }
 
     if (currentScore === 3) {
-        alert("Nice! You've got 3 unique clicks so far, the start of a streak. Sorry the scoreboard is not yet working right - I'm still working on that. BUT if you click 3 more times I'll tell you how to get an easy 50 points.");
+        alert("Nice! 3 unique clicks so far.\n\nClick 3 more unique images and you'll get a hint to boost your score by 50 points.");
     }
 
     if (currentScore === 6) {
-        alert("Great eye! Your streak is up to 6 unique clicks. You deserve a bonus. Click on your current score and you'll get 50 points.  And keep playing - if you get up to a streak of 9, you'll find another easter egg...")
+        alert("You're on a streak! You deserve a bonus.\n\nClick on the word 'score' in the Navbar to give yourself 50 points.\n\nKeep playing - three more unique clicks and you'll find another easter egg...")
     }
 
     if (currentScore === 9) {
-        alert("You've got stamina! Or you really like art.  Or maybe you're just super bored? Thanks for playing!")
-        popModal();
+        popSurpriseDiv();
     }
     // console.log("Current Score", currentScore);
     // console.log("High Score", highScore);
@@ -156,10 +156,10 @@ let getHighScore = () => {
     return highScore;
 }
 
-function popModal() {
-    console.log("Running popModal() function...")
-    var modal = document.getElementById("modal");
-    modal.classList.remove("hidden");
+function popSurpriseDiv() {
+    console.log("Running popSurpriseDiv() function...")
+    var surpriseDiv = document.getElementById("surpriseDiv");
+    surpriseDiv.classList.remove("hidden");
   }
 
 export default ArtBlock;

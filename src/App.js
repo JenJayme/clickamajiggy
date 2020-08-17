@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from './logo.svg';
+import logo from './components/logo/logo.png';
 import './App.css';
 import HelloNavbar from './components/Navbar';
 import ArtBlock from './components/gallery';
@@ -13,16 +13,12 @@ function App() {
 
     <div className="App">
       <HelloNavbar />
-      <header className="App-header">        
-      </header>
+      {/* <header className="App-header">        
+      </header> */}
       <Container>
-        <div><SurpriseDiv />
-          <ArtBlock />
-        </div>
-        <p></p>
+        <SurpriseDiv />
+        <ArtBlock />
       </Container>
-      <div className="footer">
-      </div>
     </div>
   );
 };
