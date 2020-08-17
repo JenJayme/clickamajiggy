@@ -1,32 +1,24 @@
 import React, { useState } from "react";
-import logo from './logo.svg';
+import logo from './components/logo/logo.png';
 import './App.css';
 import HelloNavbar from './components/Navbar';
 import ArtBlock from './components/gallery';
 import { Container } from 'react-bootstrap';
+import SurpriseDiv from "./components/modal";
 // import ArtContext from "./utils/ArtContext";
 
 function App() {
-  console.log('Engaging app.js...');
-  const [ArtState, setArtState] = useState({
-    name: "",
-    artURL: ""
-  });
+
   return (
 
     <div className="App">
-    <HelloNavbar />
-      <header className="App-header">
-        <p>Click on an image to earn points, but don't click on any more than once!</p>
-      </header>
+      <HelloNavbar />
+      {/* <header className="App-header">        
+      </header> */}
       <Container>
-        <div>
-          <ArtBlock />
-        </div>
-        <p></p>
+        <SurpriseDiv />
+        <ArtBlock />
       </Container>
-      <div className="footer">
-      </div>
     </div>
   );
 };

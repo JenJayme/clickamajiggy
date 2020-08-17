@@ -1,25 +1,9 @@
-.background {
-  background-color: saddlebrown;
-}
-
-.container {
-  background-color: saddlebrown;
-  height: 100%;
-}
-
-h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 70px !important;
-}
+/* Class names listed in alphabetical order */
 
 .App {
   text-align: center;
   background-color: rgb(88, 45, 14);
-}
-
-.App-logo {
-  height: 25vmin;
-  pointer-events: none;
+  height: fit-content;
 }
 
 .App-header {
@@ -34,6 +18,11 @@ h1 {
   padding: 15px;
 }
 
+.App-logo {
+  height: 25vmin;
+  pointer-events: none;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -42,15 +31,45 @@ h1 {
   margin: 1em;
 }
 
-.navbar {
-  width: 100%;
-  height: 10em;
-  color: white;
-  background-color: purple;
+.background {
+  background-color: saddlebrown;
+}
+
+body {
+  background-color: rgb(88, 45, 14) !important;
 }
 
 .brand {
   font-size: 2em;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+#clickMe {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {transform: rotate(20deg)}
+  to {transform: rotate(120deg)}
+}
+
+#closeDivBtn {
+  margin: 10px;
+}
+
+.container {
+  background-color: saddlebrown;
+  height: 100%;
+  margin-top: 30px;
+}
+
+.directionsCard {
+  color: white;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, .2)!important;
 }
 
 footer {
@@ -58,4 +77,41 @@ footer {
   height: 1em;
   bottom: 0;
   position: fixed;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 30px !important;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 13em;
+  color: white;
+  background-color: purple;
+}
+
+.score {
+  color: rgb(241, 206, 116);
+  font-size: 32px;
+}
+
+#scoreboard {
+  display: block;
+  float: none;
+}
+
+.surpriseDiv {
+  background-color: rgb(81, 81, 218) !important;
+  color: white;
+}
+
+.surpriseImg {
+  height: 300px !important;
+  width: auto;
 }
