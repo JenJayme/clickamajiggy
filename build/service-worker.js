@@ -14,7 +14,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
+<<<<<<< Updated upstream
   "/clickamajiggy/precache-manifest.6e76425259efe2f933fdf7fddfab4b14.js"
+=======
+  "/clickamajiggy/precache-manifest.948a3cc590866996aec36553f7e7cb90.js"
+>>>>>>> Stashed changes
 );
 
 self.addEventListener('message', (event) => {
